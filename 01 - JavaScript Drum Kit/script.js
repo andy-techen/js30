@@ -1,5 +1,5 @@
 function playKey(e) {
-    const audio = document.querySelector(`audio[data-key="${e.key}"]`)  // keyCode deprecated
+    const audio = document.querySelector(`audio[data-key="${e.key}"]`);  // keyCode deprecated
     const key = document.querySelector(`.key[data-key="${e.key}"]`);
     if (!audio) return;  // stop the function from running
     audio.currentTime = 0;  // start the audio from the beginning
