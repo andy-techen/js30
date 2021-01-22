@@ -5,6 +5,7 @@ Notes for 30 Day JavaScript Challenge by [Wes Bos](https://github.com/wesbos/Jav
 - `keydown` event
   - Fired when any key is pressed (unlike `keypress`)
   - Improve querySelector flexibility with CSS attribute selectors and ES6 template literals
+  
   ```JavaScript
   document.querySelector(`audio[data-key="${e.key}"]`)
   ```
