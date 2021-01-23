@@ -1,5 +1,5 @@
 # JavaScript30
-Notes for 30 Day JavaScript (Vanilla JS) Challenge by [Wes Bos](https://github.com/wesbos/JavaScript30).
+Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](https://github.com/wesbos/JavaScript30).
 ## 01 - JavaScript Drum Kit
 > [Demo](https://andy-techen.github.io/js30/01%20-%20JavaScript%20Drum%20Kit/index.html)
 - `keydown` event
@@ -16,3 +16,13 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge by [Wes Bos](https://github.c
   - Play `audio` by simply calling `audio.play()`
 ## 02 - JS and CSS Clock
 > [Demo](https://andy-techen.github.io/js30/02%20-%20JS%20and%20CSS%20Clock/index.html)
+- Setting `transform` and `transition`
+
+  ```CSS
+  .hand {
+    transform-origin: 100%;  /* defaults to 50%, controls pivot position */
+    transform: rotate(90deg);  /* change default position to 12 o'clock */
+    transition: all 0.05s;  /* <transition-property> <transition-duration> all properties that can transition will transition within 0.05s */
+    transition-timing-function: cubic-bezier(0.42, 0, 0.41, 1.67);  /* controls transition acceleration/speed, creates ticking effect; "ease-in-out" good for generic transitions */
+  }
+  ```
