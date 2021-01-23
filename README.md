@@ -22,7 +22,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   .hand {
     /* defaults to 50%, controls pivot position */
     transform-origin: 100%;
-    /* change default position to 12 o'clock */
+    /* changes default position to 12 o'clock (90 degrees) */
     transform: rotate(90deg);
     /* <transition-property> <transition-duration>,
     all transitionable properties will transition within 0.05s */
