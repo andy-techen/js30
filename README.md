@@ -5,7 +5,7 @@ Notes for 30 Day JavaScript Challenge by [Wes Bos](https://github.com/wesbos/Jav
 - `keydown` event
   - Fired when any key is pressed (unlike `keypress`)
   - Improve querySelector flexibility with CSS attribute selectors and ES6 template literals
-  
+
   ```JavaScript
   document.querySelector(`audio[data-key="${e.key}"]`)
   ```
@@ -14,3 +14,5 @@ Notes for 30 Day JavaScript Challenge by [Wes Bos](https://github.com/wesbos/Jav
 - Playing `audio`
   - Setting `audio.currentTime = 0` rewinds the audio
   - Play `audio` by simply calling `audio.play()`
+## 02 - JS and CSS Clock
+> [Demo](https://andy-techen.github.io/js30/02%20-%20JS%20and%20CSS%20Clock/index.html)
