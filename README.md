@@ -24,9 +24,11 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
     transform-origin: 100%;
     /* change default position to 12 o'clock */
     transform: rotate(90deg);
-    /* <transition-property> <transition-duration>, all transitionable properties will transition within 0.05s */
+    /* <transition-property> <transition-duration>,
+    all transitionable properties will transition within 0.05s */
     transition: all 0.05s;
-    /* controls transition acceleration, creates ticking effect; "ease-in-out" good for generic transitions */
+    /* controls transition acceleration, creates ticking effect;
+    "ease-in-out" serviceable for generic transitions */
     transition-timing-function: cubic-bezier(0.42, 0, 0.41, 1.67);
   }
   ```
