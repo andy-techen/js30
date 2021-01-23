@@ -20,9 +20,13 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 
   ```CSS
   .hand {
-    transform-origin: 100%;  /* defaults to 50%, controls pivot position */
-    transform: rotate(90deg);  /* change default position to 12 o'clock */
-    transition: all 0.05s;  /* <transition-property> <transition-duration> all properties that can transition will transition within 0.05s */
-    transition-timing-function: cubic-bezier(0.42, 0, 0.41, 1.67);  /* controls transition acceleration/speed, creates ticking effect; "ease-in-out" good for generic transitions */
+    /* defaults to 50%, controls pivot position */
+    transform-origin: 100%;
+    /* change default position to 12 o'clock */
+    transform: rotate(90deg);
+    /* <transition-property> <transition-duration>, all transitionable properties will transition within 0.05s */
+    transition: all 0.05s;
+    /* controls transition acceleration, creates ticking effect; "ease-in-out" good for generic transitions */
+    transition-timing-function: cubic-bezier(0.42, 0, 0.41, 1.67);
   }
   ```
