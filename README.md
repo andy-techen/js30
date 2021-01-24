@@ -37,15 +37,6 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 - CSS variables
   - Allows CSS to be changed real-time with JS, whereas CSS variables in Sass are defined at compile time
   - Defined with `--` prefix, and referenced with `var()`
-  - `root` element can be referenced with `document.documentElement`   
-
-  ```CSS
-  :root {
-    --base: #ffc600;
-  }
-  img {
-    background: var(--base);
-  }
-  ```
+  - `:root` element can be referenced with `document.documentElement`   
 - `change` and `mousemove` events
-  - `change` event is triggered when `value` is "committed", whereas mousemove is fired simultaneously upon movement
+  - `change` event is triggered when `value` of `<input>`, `<select>`, or `<textarea>` is "committed", whereas mousemove is fired simultaneously upon movement
