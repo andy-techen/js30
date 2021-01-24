@@ -32,3 +32,20 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
     transition-timing-function: cubic-bezier(0.42, 0, 0.41, 1.67);
   }
   ```
+  ## 03 - CSS Variables
+  > [Demo](https://andy-techen.github.io/js30/03%20-%20CSS%20Variables/index.html)
+  - CSS variables
+    - Allows CSS to be changed real-time with JS, whereas CSS variables in Sass are defined at compile time
+    - Defined with `--` prefix, and referenced with `var()`
+    - `root` element can be referenced with `document.documentElement` 
+
+    ```CSS
+    :root {
+      --base: #ffc600;
+    }
+    img {
+      background: var(--base);
+    }
+    ```
+  - `change` and `mousemove` events
+    - `change` event is triggered when `value` is "committed", whereas mousemove is fired simultaneously upon movement
