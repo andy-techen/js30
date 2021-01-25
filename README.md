@@ -41,4 +41,5 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 
 - `change` and `mousemove` events
   - `change` event is triggered when `value` of `<input>`, `<select>`, or `<textarea>` is "committed", whereas mousemove is fired simultaneously upon movement
-  
+## 04 - Array Cardio Day 1
+> [Demo](https://andy-techen.github.io/js30/04%20-%20Array%20Cardio%20Day%201/index.html)
