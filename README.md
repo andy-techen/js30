@@ -61,3 +61,12 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
     return singleValueOrObject
   }, initialValue);
   ```
+## 05 - Flex Panel Gallery
+> [Demo](https://andy-techen.github.io/js30/05%20-%20Flex%20Panel%20Gallery%20/index.html)
+- CSS selectors
+  - `.panel>*` selects all elements where the parent has a `.panel` class */
+  - `.panel>*:first-child` selects every element selected by `.panel>*` that is the first child of its parent
+
+- CSS Flexbox
+  - `display: flex`
+  - `flex`
