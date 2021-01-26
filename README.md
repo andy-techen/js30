@@ -76,3 +76,5 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - `flex` property
     - `flex: <flex-grow> <flex-shrink> <flex-basis>`
     - `flex-grow`: defaults to 1, grow `n` times larger than other flex items
+## 06 - Type Ahead
+> [Demo](https://andy-techen.github.io/js30/06%20-%20Type%20Ahead/index.html)
