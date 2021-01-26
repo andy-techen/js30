@@ -47,8 +47,17 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - Creates a new array with objects that return `true`
 
 - `Array.prototype.sort()`
-  - Usage: `sort((firstObj, secondObj) => {<compareFunction> ? 1 : -1;});`
+  ```JavaScript
+  sort((`firstObj`, `secondObj`) => {
+    `compareFunction` ? 1 : -1;
+  });
+  ```
   - If return greater than 0, sort `secondObj` to an index lower than `firstObj` (i.e. `secondObj` comes first), vice versa
 
 - `Array.prototype.reduce()`
-  - Usage: `reduce((accumulator, currentValue) => {<reducerFunction>; return single value/object}, initialValue)`
+  ```JavaScript
+  reduce((`accumulator`, `currentValue`) => {
+    `reducerFunction`;
+    return `single value/object`
+  }, `initialValue`);
+  ```
