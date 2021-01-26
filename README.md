@@ -48,16 +48,16 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 
 - `Array.prototype.sort()`
   ```JavaScript
-  sort((`firstObj`, `secondObj`) => {
-    `compareFunction` ? 1 : -1;
+  sort((firstObj, secondObj) => {
+    <compareFunction> ? 1 : -1;
   });
   ```
   - If return > 0, sort `secondObj` to an index lower than `firstObj` (i.e. `secondObj` comes first), vice versa
 
 - `Array.prototype.reduce()`
   ```JavaScript
-  reduce((`accumulator`, `currentValue`) => {
-    `reducerFunction`;
-    return `single value/object`
-  }, `initialValue`);
+  reduce((accumulator, currentValue) => {
+    <reducerFunction>;
+    return singleValueOrObject
+  }, initialValue);
   ```
