@@ -6,9 +6,9 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - Fired when any key is pressed (unlike `keypress`)
   - Improve querySelector flexibility with CSS attribute selectors and ES6 template literals
 
-  ```JavaScript
-  document.querySelector(`audio[data-key="${e.key}"]`);
-  ```
+    ```JavaScript
+    document.querySelector(`audio[data-key="${e.key}"]`);
+    ```
 - `transitionend` event
   - Fired when a CSS transition has completed, css property found in `e.propertyName`
 - Playing `audio`
@@ -52,7 +52,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
     `compareFunction` ? 1 : -1;
   });
   ```
-  - If return greater than 0, sort `secondObj` to an index lower than `firstObj` (i.e. `secondObj` comes first), vice versa
+  - If return > 0, sort `secondObj` to an index lower than `firstObj` (i.e. `secondObj` comes first), vice versa
 
 - `Array.prototype.reduce()`
   ```JavaScript
