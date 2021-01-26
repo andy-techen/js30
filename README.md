@@ -4,13 +4,13 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 > [Demo](https://andy-techen.github.io/js30/01%20-%20JavaScript%20Drum%20Kit/index.html)
 - `keydown` event
   - Fired when any key is pressed (unlike `keypress`)
-  - Improve querySelector flexibility with CSS attribute selectors and ES6 template literals
+  - Improve `querySelector` flexibility with **CSS attribute selectors** and **ES6 template literals**
 
     ```JavaScript
     document.querySelector(`audio[data-key="${e.key}"]`);
     ```
 - `transitionend` event
-  - Fired when a CSS transition has completed, css property found in `e.propertyName`
+  - Fired when a CSS transition has completed; CSS property found in `e.propertyName`
 - Playing `audio`
   - Setting `audio.currentTime = 0` rewinds the audio
   - Play `audio` by simply calling `audio.play()`
@@ -40,7 +40,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - `:root` element can be referenced with `document.documentElement`
 
 - `change` and `mousemove` events
-  - `change` event is triggered when `value` of `<input>`, `<select>`, or `<textarea>` is "committed", whereas mousemove is fired simultaneously upon movement
+  - `change` event is triggered when `value` of `<input>`, `<select>`, or `<textarea>` is *committed*, whereas mousemove is fired simultaneously upon movement
 ## 04 - Array Cardio Day 1
 > [Demo](https://andy-techen.github.io/js30/04%20-%20Array%20Cardio%20Day%201/index.html)
 - `Array.prototype.filter()`
@@ -52,7 +52,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
     <compareFunction> ? 1 : -1;
   });
   ```
-  - If return > 0, sort `secondObj` to an index lower than `firstObj` (i.e. `secondObj` comes first), vice versa
+  - If return > 0, sort `secondObj` to an index lower than `firstObj` (i.e., `secondObj` comes first), vice versa
 
 - `Array.prototype.reduce()`
   ```JavaScript
@@ -69,8 +69,8 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 
 - CSS Flexbox
   - `display: flex`
-    - `align-items`: aligns flex items vertically
-    - `justify-content`: aligns flex items horizontally
+    - `align-items`: aligns flex items *vertically*
+    - `justify-content`: aligns flex items *horizontally*
     - `flex-direction`: `row(-reverse)` & `column(-reverse)`, sets placement of flex items
   
   - `flex` property
