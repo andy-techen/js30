@@ -24,7 +24,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
     transform-origin: 100%;
     /* changes default position to 12 o'clock (90 degrees) */
     transform: rotate(90deg);
-    /* <transition-property> <transition-duration>,
+    /* transition: <transition-property> <transition-duration>,
     all transitionable properties will transition within 0.05s */
     transition: all 0.05s;
     /* controls transition acceleration, creates ticking effect;
@@ -64,9 +64,15 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 ## 05 - Flex Panel Gallery
 > [Demo](https://andy-techen.github.io/js30/05%20-%20Flex%20Panel%20Gallery%20/index.html)
 - CSS selectors
-  - `.panel>*` selects all elements where the parent has a `.panel` class */
+  - `.panel>*` selects all elements where the parent has a `.panel` class
   - `.panel>*:first-child` selects every element selected by `.panel>*` that is the first child of its parent
 
 - CSS Flexbox
   - `display: flex`
-  - `flex`
+    - `align-items`: aligns flex items vertically
+    - `justify-content`: aligns flex items horizontally
+    - `flex-direction`: `row(-reverse)` & `column(-reverse)`, sets placement of flex items
+  
+  - `flex` property
+    - `flex: <flex-grow> <flex-shrink> <flex-basis>`
+    - `flex-grow`: defaults to 1, grow `n` times larger than other flex items
