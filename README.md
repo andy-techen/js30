@@ -7,7 +7,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - Improve querySelector flexibility with CSS attribute selectors and ES6 template literals
 
   ```JavaScript
-  document.querySelector(`audio[data-key="${e.key}"]`)
+  document.querySelector(`audio[data-key="${e.key}"]`);
   ```
 - `transitionend` event
   - Fired when a CSS transition has completed, css property found in `e.propertyName`
@@ -43,3 +43,12 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - `change` event is triggered when `value` of `<input>`, `<select>`, or `<textarea>` is "committed", whereas mousemove is fired simultaneously upon movement
 ## 04 - Array Cardio Day 1
 > [Demo](https://andy-techen.github.io/js30/04%20-%20Array%20Cardio%20Day%201/index.html)
+- `Array.prototype.filter()`
+  - Creates a new array with objects that return `true`
+
+- `Array.prototype.sort()`
+  - `sort((firstObj, secondObj) => {<compareFunction> ? 1 : -1;});`
+  - if return greater than 0, sort `secondObj` to an index lower than `firstObj` (i.e. `secondObj` comes first), vice versa
+
+- `Array.prototype.reduce()`
+  - `reduce((accumulator, currentValue) => {<reducerFunction>; return single value/object}, initialValue)`
