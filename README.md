@@ -5,19 +5,19 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 - `keydown` event
   - Fired when any key is pressed (unlike `keypress`)
   - Improve `querySelector` flexibility with **CSS attribute selectors** and **ES6 template literals**
-
     ```JavaScript
     document.querySelector(`audio[data-key="${e.key}"]`);
     ```
+
 - `transitionend` event
   - Fired when a CSS transition has completed; CSS property found in `e.propertyName`
+
 - Playing `audio`
   - Setting `audio.currentTime = 0` rewinds the audio
   - Play `audio` by simply calling `audio.play()`
 ## 02 - JS and CSS Clock
 > [Demo](https://andy-techen.github.io/js30/02%20-%20JS%20and%20CSS%20Clock/index.html)
 - Setting `transform` and `transition`
-
   ```CSS
   .hand {
     /* defaults to 50%, controls pivot position */
@@ -76,5 +76,26 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - `flex` property
     - `flex: <flex-grow> <flex-shrink> <flex-basis>`
     - `flex-grow`: defaults to 1, grow `n` times larger than other flex items
-## 06 - Type Ahead
-> [Demo](https://andy-techen.github.io/js30/06%20-%20Type%20Ahead/index.html)
+## 06 - Ajax Type Ahead
+> [Demo](https://andy-techen.github.io/js30/06%20-%20Ajax%20Type%20Ahead/index.html)
+- `fetch`, `Promise`, and `Promise.prototype.then()`
+  - A `Promise` is an object representing the eventual completion or failure of an asynchronous operation
+    ```JavaScript
+    fetch(endpoint)  // returns a Promise
+      // if receives Promise, return blob.json()
+      .then(blob => blob.json())
+      // method chaining; if receives Promise, data = blob.json(), spread (...) data array into cities
+      .then(data => cities.push(...data));
+    ```
+    
+- `String.prototype.match()` and `String.prototype.replace()`
+  - The `RegExp` object is handy for creating regex containing variables
+    ```JavaScript
+    const regex = new RegExp('word', 'gi'); // g: global (all possible matches in string); i: ignoreCase
+    // is equivalant to
+    const regex = /word/gi;  // without quotes
+    ```
+  - `Number.prototype.toLocaleString()` is handy for adding thousand separators (when locale = 'en-US')
+
+- `keyup` event
+  - Fires when the user *releases* a key (`keydown` -> when user *presses* a key)
