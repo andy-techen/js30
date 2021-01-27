@@ -5,7 +5,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 - `keydown` event
   - Fired when any key is pressed (unlike `keypress`)
   - Improve `querySelector` flexibility with **CSS attribute selectors** and **ES6 template literals**
-  
+
     ```JavaScript
     document.querySelector(`audio[data-key="${e.key}"]`);
     ```
@@ -101,7 +101,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
     // is equivalant to
     const regex = /word/gi;  // without quotes
     ```
-  - `Number.prototype.toLocaleString()` is handy for adding thousand separators (when locale = 'en-US')
+  - `Number.prototype.toLocaleString()` is handy for adding thousand separators (when `locales` = 'en-US')
 
 - `keyup` event
   - Fires when the user *releases* a key (`keydown` -> when user *presses* a key)
