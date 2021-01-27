@@ -5,6 +5,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 - `keydown` event
   - Fired when any key is pressed (unlike `keypress`)
   - Improve `querySelector` flexibility with **CSS attribute selectors** and **ES6 template literals**
+  
     ```JavaScript
     document.querySelector(`audio[data-key="${e.key}"]`);
     ```
@@ -18,6 +19,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 ## 02 - JS and CSS Clock
 > [Demo](https://andy-techen.github.io/js30/02%20-%20JS%20and%20CSS%20Clock/index.html)
 - Setting `transform` and `transition`
+
   ```CSS
   .hand {
     /* defaults to 50%, controls pivot position */
@@ -47,6 +49,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - Creates a new array with objects that return `true`
 
 - `Array.prototype.sort()`
+
   ```JavaScript
   sort((firstObj, secondObj) => {
     <compareFunction> ? 1 : -1;
@@ -55,6 +58,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - If return > 0, sort `secondObj` to an index lower than `firstObj` (i.e., `secondObj` comes first), vice versa
 
 - `Array.prototype.reduce()`
+
   ```JavaScript
   reduce((accumulator, currentValue) => {
     <reducerFunction>;
@@ -80,6 +84,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 > [Demo](https://andy-techen.github.io/js30/06%20-%20Ajax%20Type%20Ahead/index.html)
 - `fetch`, `Promise`, and `Promise.prototype.then()`
   - A `Promise` is an object representing the eventual completion or failure of an asynchronous operation
+
     ```JavaScript
     fetch(endpoint)  // returns a Promise
       // if receives Promise, return blob.json()
@@ -87,11 +92,12 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
       // method chaining; if receives Promise, data = blob.json(), spread (...) data array into cities
       .then(data => cities.push(...data));
     ```
-    
+
 - `String.prototype.match()` and `String.prototype.replace()`
   - The `RegExp` object is handy for creating regex containing variables
+
     ```JavaScript
-    const regex = new RegExp('word', 'gi'); // g: global (all possible matches in string); i: ignoreCase
+    const regex = new RegExp('word', 'gi');  // g: global (all possible matches); i: ignoreCase
     // is equivalant to
     const regex = /word/gi;  // without quotes
     ```
