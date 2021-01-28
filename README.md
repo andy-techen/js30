@@ -127,3 +127,4 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
         ...comments.slice(index + 1)
       ];
       ```
+## 08 - Fun with HTML5 Canvas
