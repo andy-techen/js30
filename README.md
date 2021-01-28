@@ -108,12 +108,22 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 ## 07 - Array Cardio Day 2
 > [Demo](https://andy-techen.github.io/js30/07%20-%20Array%20Cardio%20Day%202/index.html)
 - `Array.prototype.some()` and `Array.prototype.every()`
-  -
+  - Whether *some* or *all* elements return true
 
 - `Array.prototype.find()` and `Array.prototype.findIndex()`
-  -
+  - Find elements based on testing function, returns *object* and *index* respectively
   
 - Deleting from array at given index
-  - `Array.prototype.splice()`
-  - `Array.prototype.slice()`
-  
+  - `Array.prototype.splice(index, n, *items)`
+    - Removes/replaces `n` elements starting from `index` and add `*items` to array
+    - If `*items` not specified, only removes elements from the array
+
+  - `Array.prototype.slice(start, end)`
+    - Extracts from `start` index to `end` index, returns an array (can use `...` to spread into new array)
+      
+      ```JavaScript
+      const newComments = [
+        ...comments.slice(0, index),
+        ...comments.slice(index + 1)
+      ];
+      ```
