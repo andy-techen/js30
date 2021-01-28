@@ -109,5 +109,11 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 > [Demo](https://andy-techen.github.io/js30/07%20-%20Array%20Cardio%20Day%202/index.html)
 - `Array.prototype.some()` and `Array.prototype.every()`
   -
-- `Array.prototype.find()`
+
+- `Array.prototype.find()` and `Array.prototype.findIndex()`
   -
+  
+- Deleting from array at given index
+  - `Array.prototype.splice()`
+  - `Array.prototype.slice()`
+  
