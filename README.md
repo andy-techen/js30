@@ -128,3 +128,4 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
       ];
       ```
 ## 08 - Fun with HTML5 Canvas
+> [Demo](https://andy-techen.github.io/js30/08%20-%20Fun%20with%20HTML5%20Canvas/index.html)
