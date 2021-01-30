@@ -129,3 +129,28 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
       ```
 ## 08 - Fun with HTML5 Canvas
 > [Demo](https://andy-techen.github.io/js30/08%20-%20Fun%20with%20HTML5%20Canvas/index.html)
+- `<canvas>`: used for drawing graphics on a web page
+
+  ```JavaScript
+  const canvas = document.querySelector('#draw');
+  const ctx = canvas.getContext('2d');
+  function draw(e) {  // callback draw function on MouseEvents 
+    // creates an empty list of sub-paths
+    ctx.beginPath();
+    // moves the starting point of a new sub-path to (lastX, lastY)
+    ctx.moveTo(lastX, lastY);
+    // connects the last point in the current sub-path to (e.offsetX, e.offsetY) with a straight line
+    ctx.lineTo(e.offsetX, e.offsetY);
+    // strokes the current sub-paths with the current stroke style (ctx.StrokeStyle)
+    ctx.stroke();
+    // dynamically set starting point of path to current mouse position
+    [lastX, lastY] = [e.offsetX, e.offsetY];
+  }
+  ```
+
+- `MouseEvent`
+  - `mousedown`: fired when mouse is pressed
+  - `mouseup`: fired when mouse is released
+  - `mouseout`: fired when cursor is no longer contained within the element
+## 09 - Dev Tools Domination
+> [Demo](https://andy-techen.github.io/js30/09%20-%20Dev%20Tools%20Domination/index.html)
