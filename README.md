@@ -134,7 +134,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   ```JavaScript
   const canvas = document.querySelector('#draw');
   const ctx = canvas.getContext('2d');
-  function draw(e) {  // callback draw function on MouseEvents 
+  function draw(e) {  // callback draw function upon MouseEvents 
     // creates an empty list of sub-paths
     ctx.beginPath();
     // moves the starting point of a new sub-path to (lastX, lastY)
