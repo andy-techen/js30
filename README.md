@@ -45,6 +45,9 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - `change` event is triggered when `value` of `<input>`, `<select>`, or `<textarea>` is *committed*, whereas mousemove is fired simultaneously upon movement
 ## 04 - Array Cardio Day 1
 > [Demo](https://andy-techen.github.io/js30/04%20-%20Array%20Cardio%20Day%201/index.html)
+- `console.table()`
+  - Displays results in a nice table view
+
 - `Array.prototype.filter()`
   - Creates a new array with objects that return `true`
 
@@ -68,8 +71,11 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 ## 05 - Flex Panel Gallery
 > [Demo](https://andy-techen.github.io/js30/05%20-%20Flex%20Panel%20Gallery%20/index.html)
 - CSS selectors
-  - `.panel>*` selects all elements where the parent has a `.panel` class
-  - `.panel>*:first-child` selects every element selected by `.panel>*` that is the first child of its parent
+  - `.panel>*`
+    - Selects all elements where the parent has a `.panel` class
+
+  - `.panel>*:first-child`
+    - Selects every element selected by `.panel>*` that is the first child of its parent
 
 - CSS Flexbox
   - `display: flex`
@@ -154,3 +160,36 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - `mouseout`: fired when cursor is no longer contained within the element
 ## 09 - Dev Tools Domination
 > [Demo](https://andy-techen.github.io/js30/09%20-%20Dev%20Tools%20Domination/index.html)
+- `console.dir(element)`
+  - Logs a dropdown of the properties of `element`
+- `console.assert()`
+
+  ```JavaScript
+  // <conditional test>, <message logged if false>
+  console.assert(1 === 2, 'This is wrong!');  // if true, logs nothing
+  ```
+
+- `console.group()`, `console.groupCollapsed()`, `console.groupEnd()`
+
+  ```JavaScript
+  dogs.forEach(dog => {
+    // groups message logs between `groupCollapsed` and `groupEnd`
+    console.groupCollapsed(`${dog.name}`);  // group label = `${dog.name}`
+    console.log(`This is ${dog.name}.`);
+    console.log(`${dog.name} is ${dog.age} years old.`);
+    console.groupEnd(`${dog.name}`);  // use group label as argument to close group
+  });
+  ```
+
+- `console.time()`, `console.timeEnd()`
+
+  ```JavaScript
+  // times the elapsed time from console.time() call to console.timeEnd() call
+  console.time('fetching data');  // enter timer label as argument
+  fetch('https://api.github.com/users/andy-techen')
+    .then(data => data.json())
+    .then(data => {
+        console.timeEnd('fetching data');  // use timer label to end timer
+        console.log(data);
+    });
+  ```
