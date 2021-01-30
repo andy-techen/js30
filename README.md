@@ -193,3 +193,5 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
         console.log(data);
     });
   ```
+## 10 - Hold Shift and Check Checkboxes
+> [Demo](https://andy-techen.github.io/js30/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes/index.html)
