@@ -201,6 +201,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 
 - Flag variables in JavaScript
   - Used to indicate and toggle between two boolean values depending on events in the program
+  
     ```JavaScript
     let flagVariable = false;
     if (turnTrueCondition || turnFalseCondition) {
