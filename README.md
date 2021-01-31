@@ -201,7 +201,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 
 - Flag variables in JavaScript
   - Used to indicate and toggle between two boolean values depending on events in the program
-  
+
     ```JavaScript
     let flagVariable = false;
     if (turnTrueCondition || turnFalseCondition) {
@@ -212,3 +212,4 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
     }
     ```
 ## 11 - Custom Video Player
+> [Demo](https://andy-techen.github.io/js30/11%20-%20Custom%20Video%20Player/index.html)
