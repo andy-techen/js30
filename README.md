@@ -195,3 +195,18 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   ```
 ## 10 - Hold Shift and Check Checkboxes
 > [Demo](https://andy-techen.github.io/js30/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes/index.html)
+- `<input type="checkbox">` and `MouseEvent`
+  - `checkbox.checked` returns `true` when checked
+  - `MouseEvent.shiftKey` returns true if the shift key was down when the mouse event was fired
+
+- Flag variables in JavaScript
+  - Used to indicate and toggle between two boolean values depending on events in the program
+    ```JavaScript
+    let flagVariable = false;
+    if (turnTrueCondition || turnFalseCondition) {
+      flagVariable = !flagVariable;
+    }
+    if (flagVariable) {
+      // actions when true;
+    }
+    ```
