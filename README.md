@@ -210,3 +210,4 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
       // actions when true;
     }
     ```
+## 11 - Custom Video Player
