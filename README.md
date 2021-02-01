@@ -241,23 +241,23 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 ## 13 - Slide in on Scroll
 - **Debouncing**
   - Executing the attached function only after a specified time once the user stops firing the event
-  - Often used for `scroll`, `window.onresize` events and frequent **Ajax** calls (e.g., search suggestions)
 
     ```JavaScript
     function debounce(func, wait = 20, immediate = true) {
-      var timeout;
+      let timeout;
       return function () {
-          var context = this, args = arguments;
-          var later = function () {
+          const context = this, args = arguments;
+          const later = function () {
               timeout = null;
               if (!immediate) func.apply(context, args);
           };
-          var callNow = immediate && !timeout;
+          const callNow = immediate && !timeout;
           clearTimeout(timeout);
           timeout = setTimeout(later, wait);
           if (callNow) func.apply(context, args);
       };
     }
     ```
+  - Often used for `scroll`, `window.onresize` events and frequent **Ajax** calls (e.g., search suggestions)
   - Can be implemented in **lodash** with `_.debounce(func, [wait=0], [options={}])`
   - **Throttling**: limiting the attached function to be executed only once in a given time interval
