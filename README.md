@@ -223,12 +223,12 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 - Calling methods with bracket notation
   - A method is basically a property that can be called 
 
-  ```JavaScript
-  video.method();
-  // is equivalent to
-  const method = '';
-  video[method]();  // quite handy for dynamic method calling
-  ```
+    ```JavaScript
+    video.method();
+    // is equivalent to
+    const method = '';
+    video[method]();  // quite handy for dynamic method calling
+    ```
 
 - Short-circuit evaluation
   - `condition && expr`: `expr` is only called when `condition` is `true`
