@@ -232,3 +232,9 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 
 - Short-circuit evaluation
   - `condition && expr`: `expr` is only called when `condition` is `true`
+## 12 - Key Sequence Detection
+> [Demo](https://andy-techen.github.io/js30/12%20-%20Key%20Sequence%20Detection/index.html)
+- Detect key sequences with a `keyup` EventListener, an array and `Array.prototype.join("")`
+
+- `Cornify.js`, the world's #1 unicorn and rainbow service provider 🦄
+  - Add unicorns and rainbows with `cornify_add()`!
