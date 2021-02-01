@@ -36,13 +36,13 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   ```
 ## 03 - CSS Variables
 > [Demo](https://andy-techen.github.io/js30/03%20-%20CSS%20Variables/index.html)
-- CSS variables
-  - Allows CSS to be changed real-time with JS, whereas CSS variables in Sass are defined at compile time
+- **CSS variables**
+  - Allows CSS to be changed real-time with JS, whereas **CSS variables** in Sass are defined at compile time
   - Defined with `--` prefix, and referenced with `var()`
   - `:root` element can be referenced with `document.documentElement`
 
 - `change` and `mousemove` events
-  - `change` event is triggered when `value` of `<input>`, `<select>`, or `<textarea>` is *committed*, whereas mousemove is fired simultaneously upon movement
+  - `change` event is triggered when `value` of `<input>`, `<select>`, or `<textarea>` is **committed**, whereas `mousemove` is fired simultaneously upon movement
 ## 04 - Array Cardio Day 1
 > [Demo](https://andy-techen.github.io/js30/04%20-%20Array%20Cardio%20Day%201/index.html)
 - `console.table()`
@@ -70,17 +70,17 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   ```
 ## 05 - Flex Panel Gallery
 > [Demo](https://andy-techen.github.io/js30/05%20-%20Flex%20Panel%20Gallery%20/index.html)
-- CSS selectors
+- **CSS selectors**
   - `.panel>*`
     - Selects all elements where the parent has a `.panel` class
 
   - `.panel>*:first-child`
     - Selects every element selected by `.panel>*` that is the first child of its parent
 
-- CSS Flexbox
+- **CSS Flexbox**
   - `display: flex`
-    - `align-items`: aligns flex items *vertically*
-    - `justify-content`: aligns flex items *horizontally*
+    - `align-items`: aligns flex items **vertically**
+    - `justify-content`: aligns flex items **horizontally**
     - `flex-direction`: `row(-reverse)` & `column(-reverse)`, sets placement of flex items
   
   - `flex` property
@@ -110,14 +110,14 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - `Number.prototype.toLocaleString()` is handy for adding thousand separators (when `locales` = 'en-US')
 
 - `keyup` event
-  - Fires when the user *releases* a key (`keydown` -> when user *presses* a key)
+  - Fires when the user **releases** a key (`keydown` -> when user **presses** a key)
 ## 07 - Array Cardio Day 2
 > [Demo](https://andy-techen.github.io/js30/07%20-%20Array%20Cardio%20Day%202/index.html)
 - `Array.prototype.some()` and `Array.prototype.every()`
   - Whether *some* or *all* elements return `true`
 
 - `Array.prototype.find()` and `Array.prototype.findIndex()`
-  - Find elements based on testing function, returns *object* and *index* respectively
+  - Find elements based on testing function, returns **object** and **index** respectively
   
 - Deleting from array at given index
   - `Array.prototype.splice(index, n, *items)`
@@ -199,7 +199,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - `checkbox.checked` returns `true` when checked
   - `MouseEvent.shiftKey` returns `true` if the shift key was down when the mouse event was fired
 
-- Flag variables in JavaScript
+- **Flag variables** in JavaScript
   - Used to indicate and toggle between two boolean values depending on events in the program
 
     ```JavaScript
@@ -230,7 +230,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
     video[method]();  // quite handy for dynamic method calling
     ```
 
-- Short-circuit evaluation
+- **Short-circuit evaluation**
   - `condition && expr`: `expr` is only called when `condition` is `true`
 ## 12 - Key Sequence Detection
 > [Demo](https://andy-techen.github.io/js30/12%20-%20Key%20Sequence%20Detection/index.html)
@@ -239,3 +239,24 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 - [Cornify.js](https://github.com/Cornify/Cornify), the world's #1 unicorn and rainbow service provider 🦄
   - Add random unicorns and rainbows to the page with `cornify_add()`
 ## 13 - Slide in on Scroll
+- **Debouncing**
+  - 
+
+  ```JavaScript
+  function debounce(func, wait = 20, immediate = true) {
+    var timeout;
+    return function () {
+        var context = this, args = arguments;
+        var later = function () {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+        };
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+    };
+  }
+  ```
+  - Can be implemented in **lodash** with `_.debounce(func, [wait=0], [options={}])`
+  - **Throttling**: limiting the attached function to be executed only once in a given time interval
