@@ -104,7 +104,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 
     ```JavaScript
     const regex = new RegExp('word', 'gi');  // g: global (all possible matches); i: ignoreCase
-    // is equivalant to
+    // is equivalent to
     const regex = /word/gi;  // without quotes
     ```
   - `Number.prototype.toLocaleString()` is handy for adding thousand separators (when `locales` = 'en-US')
@@ -114,7 +114,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 ## 07 - Array Cardio Day 2
 > [Demo](https://andy-techen.github.io/js30/07%20-%20Array%20Cardio%20Day%202/index.html)
 - `Array.prototype.some()` and `Array.prototype.every()`
-  - Whether *some* or *all* elements return true
+  - Whether *some* or *all* elements return `true`
 
 - `Array.prototype.find()` and `Array.prototype.findIndex()`
   - Find elements based on testing function, returns *object* and *index* respectively
@@ -197,7 +197,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 > [Demo](https://andy-techen.github.io/js30/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes/index.html)
 - `<input type="checkbox">` and `MouseEvent`
   - `checkbox.checked` returns `true` when checked
-  - `MouseEvent.shiftKey` returns true if the shift key was down when the mouse event was fired
+  - `MouseEvent.shiftKey` returns `true` if the shift key was down when the mouse event was fired
 
 - Flag variables in JavaScript
   - Used to indicate and toggle between two boolean values depending on events in the program
@@ -213,3 +213,22 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
     ```
 ## 11 - Custom Video Player
 > [Demo](https://andy-techen.github.io/js30/11%20-%20Custom%20Video%20Player/index.html)
+- `HTMLMediaElement` (`video` and `audio`)
+  - `video.paused`: returns boolean of whether the media element is paused
+  - `timeupdate` event: fired when `currentTime` attribute is updated
+
+- `Element.requestFullscreen()`
+  - Issues an asynchronous request to display the element in full-screen mode
+
+- Calling methods with bracket notation
+  - A method is basically a property that can be called 
+
+  ```JavaScript
+  video.method();
+  // is equivalent to
+  const method = '';
+  video[method]();  // quite handy for dynamic method calling
+  ```
+
+- Short-circuit evaluation
+  - `condition && expr`: `expr` is only called when `condition` is `true`
