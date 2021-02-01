@@ -237,4 +237,4 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 - Detect key sequences with a `keyup` EventListener, an array and `Array.prototype.join("")`
 
 - [Cornify.js](https://github.com/Cornify/Cornify), the world's #1 unicorn and rainbow service provider 🦄
-  - Add random unicorns and rainbows to the page with `cornify_add()`!
+  - Add random unicorns and rainbows to the page with `cornify_add()`
