@@ -314,3 +314,6 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 - **Deep cloning** (copying nested arrays/objects)
   - `_.cloneDeep()` in **lodash**
   - `JSON.parse(JSON.stringify(arrayOrObject))`
+
+## 15 - LocalStorage
+> [Demo](https://andy-techen.github.io/js30/15%20-%20LocalStorage/index.html)
