@@ -282,7 +282,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 
 ## 14 - JavaScript References VS Copying
 > [Demo](https://andy-techen.github.io/js30/14%20-%20JavaScript%20References%20VS%20Copying/index.html)
-- Copying **arrays**
+- Copying **arrays** (1-level deep)
   
   ```JavaScript
   const array = ["item1", "item2", "item3"];
@@ -295,8 +295,8 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   // method 4
   const newArray = Array.from(array);
   ```
-  
-- Copying **objects**
+
+- Copying **objects** (1-level deep)
   
   ```JavaScript
   const object = {
@@ -311,6 +311,6 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   const newObject = {...object};
   ```
 
-- **Deep cloning** (nested array/object)
+- **Deep cloning** (copying nested arrays/objects)
   - `_.cloneDeep()` in **lodash**
   - `JSON.parse(JSON.stringify(arrayOrObject))`
