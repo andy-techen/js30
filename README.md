@@ -251,6 +251,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - Add random unicorns and rainbows to the page with `cornify_add()`
 
 ## 13 - Slide in on Scroll
+> [Demo](https://andy-techen.github.io/js30/13%20-%20Slide%20in%20on%20Scroll/index.html)
 - **Debouncing**
   - Executing the attached function only after a specified time (milliseconds) once the user stops firing the event
 
@@ -265,7 +266,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
           };
           const callNow = immediate && !timeout;
           clearTimeout(timeout);
-          timeout = setTimeout(later, wait);  // waits for 20 milliseconds
+          timeout = setTimeout(later, wait);  // in this case, waits for 20 milliseconds
           if (callNow) func.apply(context, args);
       };
     }
@@ -280,3 +281,36 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - `HTMLElement.offsetTop`: the distance from this element's top border to its `offsetParent`'s top border
 
 ## 14 - JavaScript References VS Copying
+> [Demo](https://andy-techen.github.io/js30/14%20-%20JavaScript%20References%20VS%20Copying/index.html)
+- Copying **arrays**
+  
+  ```JavaScript
+  const array = ["item1", "item2", "item3"];
+  // method 1
+  const newArray = array.slice();
+  // method 2
+  const newArray = [].concat(array);
+  // method 3
+  const newArray = [...array];
+  // method 4
+  const newArray = Array.from(array);
+  ```
+  
+- Copying **objects**
+  
+  ```JavaScript
+  const object = {
+    key1: value1,
+    key2: value2,
+    key3: value3
+  }
+  // method 1
+  const newObject = Object.assign({}, object, ...sources);
+  // ...sources: an object containing properties to be assigned to the new object
+  // method 2
+  const newObject = {...object};
+  ```
+
+- **Deep cloning** (nested array/object)
+  - `_.cloneDeep()` in **lodash**
+  - `JSON.parse(JSON.stringify(arrayOrObject))`
