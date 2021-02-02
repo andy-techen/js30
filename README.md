@@ -16,6 +16,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 - Playing `audio`
   - Setting `audio.currentTime = 0` rewinds the audio
   - Play `audio` by simply calling `audio.play()`
+
 ## 02 - JS and CSS Clock
 > [Demo](https://andy-techen.github.io/js30/02%20-%20JS%20and%20CSS%20Clock/index.html)
 - Setting `transform` and `transition`
@@ -34,6 +35,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
     transition-timing-function: cubic-bezier(0.42, 0, 0.41, 1.67);
   }
   ```
+
 ## 03 - CSS Variables
 > [Demo](https://andy-techen.github.io/js30/03%20-%20CSS%20Variables/index.html)
 - **CSS variables**
@@ -43,6 +45,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 
 - `change` and `mousemove` events
   - `change` event is triggered when `value` of `<input>`, `<select>`, or `<textarea>` is **committed**, whereas `mousemove` is fired simultaneously upon movement
+
 ## 04 - Array Cardio Day 1
 > [Demo](https://andy-techen.github.io/js30/04%20-%20Array%20Cardio%20Day%201/index.html)
 - `console.table()`
@@ -68,6 +71,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
     return singleValueOrObject
   }, initialValue);
   ```
+
 ## 05 - Flex Panel Gallery
 > [Demo](https://andy-techen.github.io/js30/05%20-%20Flex%20Panel%20Gallery%20/index.html)
 - **CSS selectors**
@@ -86,6 +90,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - `flex` property
     - `flex: <flex-grow> <flex-shrink> <flex-basis>`
     - `flex-grow`: defaults to 1, grow `n` times larger than other flex items
+
 ## 06 - Ajax Type Ahead
 > [Demo](https://andy-techen.github.io/js30/06%20-%20Ajax%20Type%20Ahead/index.html)
 - `fetch`, `Promise`, and `Promise.prototype.then()`
@@ -111,6 +116,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 
 - `keyup` event
   - Fires when the user **releases** a key (`keydown` -> when user **presses** a key)
+
 ## 07 - Array Cardio Day 2
 > [Demo](https://andy-techen.github.io/js30/07%20-%20Array%20Cardio%20Day%202/index.html)
 - `Array.prototype.some()` and `Array.prototype.every()`
@@ -133,6 +139,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
         ...comments.slice(index + 1)
       ];
       ```
+
 ## 08 - Fun with HTML5 Canvas
 > [Demo](https://andy-techen.github.io/js30/08%20-%20Fun%20with%20HTML5%20Canvas/index.html)
 - `<canvas>`: used for drawing graphics on a web page
@@ -158,6 +165,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - `mousedown`: fired when mouse is pressed
   - `mouseup`: fired when mouse is released
   - `mouseout`: fired when cursor is no longer contained within the element
+
 ## 09 - Dev Tools Domination
 > [Demo](https://andy-techen.github.io/js30/09%20-%20Dev%20Tools%20Domination/index.html)
 - `console.dir(element)`
@@ -193,6 +201,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
         console.log(data);
     });
   ```
+
 ## 10 - Hold Shift and Check Checkboxes
 > [Demo](https://andy-techen.github.io/js30/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes/index.html)
 - `<input type="checkbox">` and `MouseEvent`
@@ -211,6 +220,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
       // actions when true;
     }
     ```
+
 ## 11 - Custom Video Player
 > [Demo](https://andy-techen.github.io/js30/11%20-%20Custom%20Video%20Player/index.html)
 - `HTMLMediaElement` (`video` and `audio`)
@@ -232,12 +242,14 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 
 - **Short-circuit evaluation**
   - `condition && expr`: `expr` is only called when `condition` is `true`
+
 ## 12 - Key Sequence Detection
 > [Demo](https://andy-techen.github.io/js30/12%20-%20Key%20Sequence%20Detection/index.html)
 - Detect key sequences with a `keyup` EventListener, an array and `Array.prototype.join("")`
 
 - [Cornify.js](https://github.com/Cornify/Cornify), the world's #1 unicorn and rainbow service provider 🦄
   - Add random unicorns and rainbows to the page with `cornify_add()`
+
 ## 13 - Slide in on Scroll
 - **Debouncing**
   - Executing the attached function only after a specified time (milliseconds) once the user stops firing the event
