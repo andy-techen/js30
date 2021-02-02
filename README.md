@@ -266,3 +266,5 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - `window.scrollY`: the number of pixels that has already been scrolled vertically
   - `window.innerHeight`: the height of the content area of the browser window
   - `HTMLElement.offsetTop`: the distance from this element's top border to its `offsetParent`'s top border
+
+## 14 - JavaScript References VS Copying
