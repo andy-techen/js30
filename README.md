@@ -240,7 +240,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - Add random unicorns and rainbows to the page with `cornify_add()`
 ## 13 - Slide in on Scroll
 - **Debouncing**
-  - Executing the attached function only after a specified time once the user stops firing the event
+  - Executing the attached function only after a specified time (milliseconds) once the user stops firing the event
 
     ```JavaScript
     function debounce(func, wait = 20, immediate = true) {
@@ -253,7 +253,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
           };
           const callNow = immediate && !timeout;
           clearTimeout(timeout);
-          timeout = setTimeout(later, wait);
+          timeout = setTimeout(later, wait);  // waits for 20 milliseconds
           if (callNow) func.apply(context, args);
       };
     }
@@ -261,3 +261,8 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - Often used for `scroll`, `window.onresize` events and frequent **Ajax** calls (e.g., search suggestions)
   - Can be implemented in **lodash** with `_.debounce(func, [wait=0], [options={}])`
   - **Throttling**: limiting the attached function to be executed only once in a given time interval
+  
+- `window` and `HTMLElement` coordinates
+  - `window.scrollY`: the number of pixels that has already been scrolled vertically
+  - `window.innerHeight`: the height of the content area of the browser window
+  - `HTMLElement.offsetTop`: the distance from this element's top border to its `offsetParent`'s top border
