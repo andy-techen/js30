@@ -344,4 +344,4 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
     }
     ```
 
-## 16 -
+## 16 - Mouse Move Shadow
