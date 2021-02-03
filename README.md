@@ -245,7 +245,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 
 ## 12 - Key Sequence Detection
 > [Demo](https://andy-techen.github.io/js30/12%20-%20Key%20Sequence%20Detection/index.html)
-- Detect key sequences with a `keyup` EventListener, an array and `Array.prototype.join("")`
+- Detect key sequences with a `keyup` `EventListener`, an array and `Array.prototype.join("")`
 
 - [Cornify.js](https://github.com/Cornify/Cornify), the world's #1 unicorn and rainbow service provider 🦄
   - Add random unicorns and rainbows to the page with `cornify_add()`
@@ -317,3 +317,29 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 
 ## 15 - LocalStorage
 > [Demo](https://andy-techen.github.io/js30/15%20-%20LocalStorage/index.html)
+- `submit` event
+  - Fires when a `<form>` is submitted (when `<input type="button">` is clicked, or `Enter` key is pressed while editing a field)
+  - Use `e.preventDefault()` to prevent page reload every time a form is submitted
+
+- **Local storage**
+  - Can be monitored in **Chrome DevTools** -> **Application** -> **Local Storage**
+  - `localStorage` has no expiration time, whereas data stored in `sessionStorage` gets cleared when the page session ends
+  - Pitfalls
+    - Synchronous
+    - Can't be used by web workers -> unable to utilize background processing
+    - Can only store ~5MB of data
+    - Any JavaScript code on your page can access local storage -> no data protection
+  - `localStorage.setItem(key, JSON.stringify(value))` adds key value pair to **Local Storage**
+  - `localStorage.getItem(JSON.parse(key))` gets value of key from **Local Storage**
+
+- **Event delegation**
+  - Add `EventListener` to parent elements or existing elements at page load, then filter out the target element
+    
+    ```JavaScript
+    function toggleDone(e) {
+      // skip this unless it's an input element
+      if (!e.target.matches('input')) return;  // equivalent to .is() in JQuery
+      const el = e.target;
+      // do stuff with el
+    }
+    ```
