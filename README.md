@@ -322,7 +322,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - Use `e.preventDefault()` to prevent page reload every time a form is submitted
 
 - **Local storage**
-  - Can be monitored in **Chrome DevTools** -> **Application** -> **Local Storage**
+  - Can be monitored in **Chrome DevTools -> Application -> Local Storage**
   - `localStorage` has no expiration time, whereas data stored in `sessionStorage` gets cleared when the page session ends
   - Pitfalls
     - Synchronous
