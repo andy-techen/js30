@@ -345,3 +345,5 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
     ```
 
 ## 16 - Mouse Move Shadow
+> [Demo](https://andy-techen.github.io/js30/16%20-%20Mouse%20Move%20Shadow/index.html)
+- `offset` coordinates
