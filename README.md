@@ -54,6 +54,9 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 - `Array.prototype.filter()`
   - Creates a new array with objects that return `true`
 
+- `Array.prototype.map()`
+  - Calls function on every element in the array and creates a new array populated with the results
+
 - `Array.prototype.sort()`
 
   ```JavaScript
@@ -354,3 +357,6 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - `offsetY`: the distance (px) between the `MouseEvent` and the **top** padding edge of the target node
 
 ## 17 - Sort Without Articles
+- `RegExp` revisit
+  - `^`: starts with
+  - `(a |an |the )`: contains "a ", "an ", "the " -> spaces matter
