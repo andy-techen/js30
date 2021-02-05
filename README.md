@@ -363,3 +363,12 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - `(a |an |the )`: contains "a ", "an ", "the " -> spaces matter
 
 ## 18 - Adding Up Times with Reduce
+> [Demo](https://andy-techen.github.io/js30/18%20-%20Adding%20Up%20Times%20with%20Reduce/index.html)
+- `array.map(parseFloat)` parses array of strings to floats 
+
+- Getting integer and decimals from float
+  ```JavaScript
+  const totalSecs = 1000;
+  const mins = Math.floor(totalSecs / 60);  // 16
+  const secs = totalSecs % 60;  // 40
+  ```
