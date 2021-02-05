@@ -352,3 +352,5 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 - `MouseEvent` `offset` coordinates
   - `offsetX`: the distance (px) between the `MouseEvent` and the **left** padding edge of the target node
   - `offsetY`: the distance (px) between the `MouseEvent` and the **top** padding edge of the target node
+
+## 17 - Sort Without Articles
