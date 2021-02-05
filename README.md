@@ -361,3 +361,5 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 - `RegExp` revisit
   - `^`: starts with
   - `(a |an |the )`: contains "a ", "an ", "the " -> spaces matter
+
+## 18 - Adding Up Times with Reduce
