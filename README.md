@@ -357,6 +357,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - `offsetY`: the distance (px) between the `MouseEvent` and the **top** padding edge of the target node
 
 ## 17 - Sort Without Articles
+> [Demo](https://andy-techen.github.io/js30/17%20-%20Sort%20Without%20Articles/index.html)
 - `RegExp` revisit
   - `^`: starts with
   - `(a |an |the )`: contains "a ", "an ", "the " -> spaces matter
