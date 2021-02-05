@@ -346,4 +346,9 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 
 ## 16 - Mouse Move Shadow
 > [Demo](https://andy-techen.github.io/js30/16%20-%20Mouse%20Move%20Shadow/index.html)
-- `offset` coordinates
+- `contenteditable`
+  - An enumerated attribute indicating if the element should be editable by the user, e.g., `<h1 contenteditable></h1>`
+
+- `MouseEvent` `offset` coordinates
+  - `offsetX`: the distance (px) between the `MouseEvent` and the **left** padding edge of the target node
+  - `offsetY`: the distance (px) between the `MouseEvent` and the **top** padding edge of the target node
