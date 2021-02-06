@@ -360,7 +360,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 > [Demo](https://andy-techen.github.io/js30/17%20-%20Sort%20Without%20Articles/index.html)
 - `RegExp` revisit
   - `^`: starts with
-  - `(a |an |the )`: contains "a ", "an ", "the " -> spaces matter
+  - `(a |an |the )`: contains "a ", "an ", "the " (spaces matter)
 
 ## 18 - Adding Up Times with Reduce
 > [Demo](https://andy-techen.github.io/js30/18%20-%20Adding%20Up%20Times%20with%20Reduce/index.html)
