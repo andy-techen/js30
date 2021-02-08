@@ -375,3 +375,48 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 
 ## 19 - Webcam Fun
 > [Demo](https://andy-techen.github.io/js30/19%20-%20Webcam%20Fun/index.html)
+- Accessing user media input via `MediaStream` objects
+  
+  ```JavaScript
+  navigator.mediaDevices.getUserMedia({ video: true, audio: false })
+  // mobile front camera: { audio: true, video: { facingMode: "user" } }
+  // mobile rear camera: { audio: true, video: { facingMode: { exact: "environment" } } }
+    .then(localMediaStream => {
+        video.srcObject = localMediaStream;
+        video.play();
+    })
+    .catch((err) => console.log(err));
+  ```
+
+- Media elements on `<canvas>`
+  - Manipulating `CanvasRenderingContext2D` instances
+  
+    ```JavaScript
+    const ctx = canvas.getContext('2d');
+
+    ctx.drawImage(image, dx, dy, dWidth, dHeight);
+    // image: an element to draw into the context, e.g., HTMLImageElement, HTMLVideoElement
+    ctx.getImageData(sx, sy, sw, sh);  // returns an ImageData object containing the array of pixel values
+    // dx, sx: x coordinate of the top-left corner of image mask
+    // dy, sy: y coordinate of the top-left corner of image mask
+    // dWidth, sw: the width of image mask
+    // dHeight, sh: y coordinate of the top-left corner of image mask
+    ctx.putImageData(imageData, dx, dy);  // paints data from the given ImageData object onto the canvas
+    ```
+  
+  - `ImageData.data`
+    - An array containing pixel data in RGBA (0~255) order, i.e., [r1, g1, b1, a1, r2, g2, b2, a2, ...]
+
+  - Capturing and downloading images from `<canvas>`
+    ```JavaScript
+    const data = canvas.toDataURL('image/jpeg');  // returns the canvas image in base64 encoding
+    const link = document.createElement('a');
+    link.href = data;
+    link.setAttribute('download', 'image');  // <a href=`${data}` download="image"> -> image.jpg
+    ```
+
+- `canplay` event
+  - Fired when the user agent can play the media (not necessarily play through)
+
+- `debugger`
+  - Can be placed in source and utilized for setting breakpoints and detecting bugs
