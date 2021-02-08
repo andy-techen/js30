@@ -374,7 +374,8 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   ```
 
 ## 19 - Webcam Fun
-> [Demo](https://andy-techen.github.io/js30/19%20-%20Webcam%20Fun/index.html)
+> npm install
+> npm start
 - Accessing user media input via `MediaStream` objects
   
   ```JavaScript
@@ -425,4 +426,4 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 - `debugger`
   - Can be placed in source and utilized for setting breakpoints and detecting bugs
 
-## 
+## 20 - Speech Detection
