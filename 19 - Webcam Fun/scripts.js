@@ -12,7 +12,7 @@ function getVideo() {
         })
         .catch((err) => {
             console.error('Please allow access to webcam!', err);
-        })
+        });
 }
 
 function paintToCanvas() {
