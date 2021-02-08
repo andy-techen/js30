@@ -374,3 +374,4 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   ```
 
 ## 19 - Webcam Fun
+> [Demo](https://andy-techen.github.io/js30/19%20-%20Webcam%20Fun/index.html)
