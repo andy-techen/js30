@@ -427,3 +427,5 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - Can be placed in source and utilized for setting breakpoints and detecting bugs
 
 ## 20 - Speech Detection
+> npm install  
+> npm start
