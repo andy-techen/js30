@@ -396,12 +396,16 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 
     ctx.drawImage(image, dx, dy, dWidth, dHeight);
     // image: an element to draw into the context, e.g., HTMLImageElement, HTMLVideoElement
-    ctx.getImageData(sx, sy, sw, sh);  // returns an ImageData object containing the array of pixel values
+
+    // returns an ImageData object containing the array of pixel values
+    ctx.getImageData(sx, sy, sw, sh);
     // dx, sx: x coordinate of the top-left corner of image mask
     // dy, sy: y coordinate of the top-left corner of image mask
     // dWidth, sw: the width of image mask
     // dHeight, sh: y coordinate of the top-left corner of image mask
-    ctx.putImageData(imageData, dx, dy);  // paints data from the given ImageData object onto the canvas
+
+    // paints data from the given ImageData object onto the canvas
+    ctx.putImageData(imageData, dx, dy);
     ```
   
   - `ImageData.data`
