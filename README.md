@@ -483,3 +483,5 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - Fired when pointing device initially enters the element, acts similiar to the `:hover` pseudo-class when combined with `mouseleave`
   - `mouseenter` vs. `mouseover`: `mouseenter` doesn't **bubble**, whereas a single `mouseover` event is sent to the deepest element of the DOM tree, then it **bubbles** up the hierarchy until it is canceled by a handler or reaches the root (`document` object)
 
+## 23 - Speech Synthesis
+> [Demo](https://andy-techen.github.io/js30/23%20-%20Speech%20Synthesis/index.html)
