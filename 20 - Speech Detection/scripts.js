@@ -10,14 +10,12 @@ words.appendChild(p);
 
 recognition.addEventListener('result', e => {
     const transcript = Array.from(e.results)
-        .map(result => result[0])
-        .map(result => result.transcript)
+        .map(result => result[0].transcript)
         .join("");
-    
     p.textContent = transcript;
 
     if (e.results[0].isFinal) {
-        p = document.createElement('p');
+        p = document.createElement('p');  // creates new p element
         words.appendChild(p);
     }
 });
