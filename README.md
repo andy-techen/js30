@@ -467,7 +467,10 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 ## 21 - Geolocation
 > npm install  
 > npm start
-- `navigator.geolocation.getCurrentPosition()`
+- `navigator.geolocation.WatchPosition()`
   - Called automatically each time the position of the device changes
-  - Returns `GeolocationPosition` as data; position of the device can be found in `data.coords`
+  - Returns `GeolocationPosition` as `data`; position of the device can be found in `data.coords`
+
+- `navigator.geolocation.getCurrentPosition()`
+  - Returns current location of device via a `GeolocationPosition` instance
 
