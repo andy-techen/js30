@@ -61,7 +61,7 @@ h1 {
   margin: 10px 0;
   padding: 10px;
   border: 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   background: #F7F7F7;
   outline: 0;
 }
@@ -69,8 +69,6 @@ h1 {
 textarea {
   height: 20rem;
 }
-
-input[type="select"] {}
 
 .voiceinator button {
   background: #ffc600;
