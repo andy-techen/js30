@@ -475,3 +475,11 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - Returns current location of device via a `GeolocationPosition` instance
 
 ## 22 - Follow Along Link Highlighter
+> [Demo](https://andy-techen.github.io/js30/22%20-%20Follow%20Along%20Link%20Highlighter/index.html)
+- `getBoundingClientRect()`
+  - Returns a `DOMRect` object containing the size of an element and its coordinates relative to the viewport
+
+- `mouseenter` event
+  - Fired when pointing device initially enters the element, acts similiar to the `:hover` pseudo-class when combined with `mouseleave`
+  - `mouseenter` vs. `mouseover`: `mouseenter` doesn't **bubble**, whereas a single `mouseover` event is sent to the deepest element of the DOM tree, then it **bubbles** up the hierarchy until it is canceled by a handler or reaches the root (`document` object)
+
