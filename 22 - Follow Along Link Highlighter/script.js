@@ -5,9 +5,16 @@ document.body.append(highlight);
 
 function highlightLink() {
     const linkCoords = this.getBoundingClientRect();
-    highlight.style.width = `${linkCoords.width}px`;
-    highlight.style.height = `${linkCoords.height}px`;
-    highlight.style.transform = `translate(${linkCoords.left}px, ${linkCoords.top + window.scrollY}px)`;
+    const coords = {
+        width: linkCoords.width,
+        height: linkCoords.height,
+        left: linkCoords.left + window.scrollX,
+        top: linkCoords.top + window.scrollY
+    }
+
+    highlight.style.width = `${coords.width}px`;
+    highlight.style.height = `${coords.height}px`;
+    highlight.style.transform = `translate(${coords.left}px, ${coords.top}px)`;
     // added scrollY to offset window scrolling
 }
 
