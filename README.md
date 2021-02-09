@@ -515,3 +515,5 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
     // if `thisArgs` is null, the `this` of the executing scope, $("button"), is used as `thisArg`
     ```
 
+## 24 - Sticky Nav
+> [Demo](https://andy-techen.github.io/js30/24%20-%20Sticky%20Nav/index.html)
