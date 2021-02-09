@@ -1,6 +1,5 @@
-window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+const recognition = new webkitSpeechRecognition() || new SpeechRecognition();
 
-const recognition = new SpeechRecognition();
 recognition.interimResults = true;  // synchronizes results with speech
 
 let p = document.createElement('p');
