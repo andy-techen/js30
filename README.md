@@ -429,7 +429,7 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 ## 20 - Speech Detection
 > npm install  
 > npm start
-- `window.SpeechRecognition` and `window.webkitSpeechRecognition`
+- `SpeechRecognition` and `webkitSpeechRecognition`
   - Only available in **Chrome** and **Edge**
   - Setting up `SpeechRecognition` object
 
@@ -441,13 +441,13 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - `result` event
     - Fired when the speech recognition service returns a result
 
-    ```JavaScript
-    recognition.addEventListener('result', e => {
-    const transcript = Array.from(e.results)  // e.results returns as a NodeList
-        .map(result => result[0].transcript)  // returns the words in an array
-        .join("");  // joins the words into a sentence
-    });
-    ```
+      ```JavaScript
+      recognition.addEventListener('result', e => {
+      const transcript = Array.from(e.results)  // e.results returns as a NodeList
+          .map(result => result[0].transcript)  // returns the words in an array
+          .join("");  // joins the words into a sentence
+      });
+      ```
 
   - `end` event
     - Fired when the speech recognition service has disconnected
