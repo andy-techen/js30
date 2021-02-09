@@ -485,3 +485,33 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 
 ## 23 - Speech Synthesis
 > [Demo](https://andy-techen.github.io/js30/23%20-%20Speech%20Synthesis/index.html)
+- `speechSynthesis`
+  - `.getVoices()` returns a list of available `SpeechSynthesisVoice` objects
+  - Start the `msg` `SpeechSynthesisUtterance` with `.speak(msg)`, stop with `.cancel()`
+  - `SpeechSynthesisUtterance` contains the properties (e.g., text, language, pitch, volume) of the speech
+
+- `<select>` and `<option>`
+  - Access the selected `<option>` value with `$("select").value`
+  
+    ```HTML
+    <select name="choice">
+      <option value="first">First Value</option>
+      <option value="second" selected>Second Value</option>
+      <option value="third">Third Value</option>
+    </select>
+    ```
+
+- `Array.prototype.find()`
+  - Returns the value of the first element in the array that satisfies the condition
+
+- `Function.prototype.bind(thisArg, *args)`
+  - Creates a **new** function with `thisArgs` as `this` and `*args` as arguments for the provided function
+  - Commonly used when the function requires explicit assignment of a specific `this`
+
+    ```JavaScript
+    $("button").addEventListener('click', () => func(arg1, arg2));
+    // equivalent to
+    $("button").addEventListener('click', func.bind(null, arg1, arg2));
+    // if `thisArgs` is null, the `this` of the executing scope, $("button"), is used as `thisArg`
+    ```
+
