@@ -429,3 +429,37 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 ## 20 - Speech Detection
 > npm install  
 > npm start
+- `window.SpeechRecognition` and `window.webkitSpeechRecognition`
+  - Only available in **Chrome** and **Edge**
+  - Setting up `SpeechRecognition` object
+
+    ```JavaScript
+    const recognition = new webkitSpeechRecognition() || new SpeechRecognition();
+    recognition.interimResults = true;  // synchronizes results (not yet final) with speech
+    ```
+
+  - `result` event
+    - Fired when the speech recognition service returns a result
+
+    ```JavaScript
+    recognition.addEventListener('result', e => {
+    const transcript = Array.from(e.results)  // e.results returns as a NodeList
+        .map(result => result[0].transcript)  // returns the words in an array
+        .join("");  // joins the words into a sentence
+    });
+    ```
+
+  - `end` event
+    - Fired when the speech recognition service has disconnected
+    - `recognition.addEventListener('end', recognition.start);` reboots recognition instance
+
+- Creating and appending elements on the fly
+  ```JavaScript
+  const words = document.querySelector('.words');
+  let p = document.createElement('p');
+
+  if (e.results[0].isFinal) {  // i.e., not an interimResult
+    p = document.createElement('p');  // creates new <p> element
+    words.appendChild(p);
+  }
+  ```
