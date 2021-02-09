@@ -474,3 +474,4 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 - `navigator.geolocation.getCurrentPosition()`
   - Returns current location of device via a `GeolocationPosition` instance
 
+## 22 - Follow Along Link Highlighter
