@@ -555,3 +555,5 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   - `transition` : `property` | `duration` | `timing-function` | `delay`, e.g, `transition: all 0.5s ease-out 0.1s` applies `ease-out` for `0.5s` on `all` changed properties after a `0.1s` delay
   - `transform: scale(x, y)` resizes element by `x * y`, set origin with `transform-origin`
 
+## 25 - Event Capture, Propagation, Bubbling and Once
+> [Demo](https://andy-techen.github.io/js30/25%20-%20Event%20Capture,%20Propagation,%20Bubbling%20and%20Once/index.html)
