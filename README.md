@@ -517,3 +517,41 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 
 ## 24 - Sticky Nav
 > [Demo](https://andy-techen.github.io/js30/24%20-%20Sticky%20Nav/index.html)
+- `<nav>`
+  - `<nav>` no longer takes up space in the document when `position: fixed` -> set `${nav.offsetHeight}px` as `document.body.style.paddingTop` to prevent subsequent elements from moving up
+  - Basic fixed `<nav>` bar
+  
+  ```HTML
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contacts</a></li>
+    </ul>
+  </nav>
+  ```
+  ```CSS
+  nav {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;  /* no bullets */
+    display: flex;
+  }
+  nav li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  ```
+
+- Adjusting `transform` and `transition`
+  - `transition` : `property` | `duration` | `timing-function` | `delay`, e.g, `transition: all 0.5s ease-out 0.1s` applies `ease-out` for `0.5s` on `all` changed properties after a `0.1s` delay
+  - `transform: scale(x, y)` resizes element by `x * y`, set origin with `transform-origin`
+
