@@ -574,3 +574,5 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   })
   ```
 
+## 26 - Stripe Follow Along Nav
+> [Demo](https://andy-techen.github.io/js30/26%20-%20Follow%20Along%20Nav/index.html)
