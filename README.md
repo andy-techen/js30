@@ -585,3 +585,6 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
   setTimeout(() => this.classList.contains('trigger-enter') &&  // if first condition == true,
     this.classList.add('trigger-enter-active'), 150);  // do following actions after 0.15s
   ```
+
+## 27 - Click and Drag
+> [Demo](https://andy-techen.github.io/js30/26%20-%20Click%20and%20Drag/index.html)
