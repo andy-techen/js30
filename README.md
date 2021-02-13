@@ -576,3 +576,12 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 
 ## 26 - Stripe Follow Along Nav
 > [Demo](https://andy-techen.github.io/js30/26%20-%20Follow%20Along%20Nav/index.html)
+- `offset` positions
+  - Can be easily accessed in **JQuery** using `$(element).offset()`
+  
+- Utilizing `setTimeout()` to create delay effect
+  ```JavaScript
+  this.classList.add('trigger-enter');
+  setTimeout(() => this.classList.contains('trigger-enter') &&  // if first condition == true,
+    this.classList.add('trigger-enter-active'), 150);  // do following actions after 0.15s
+  ```
