@@ -557,3 +557,20 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 
 ## 25 - Event Capture, Propagation, Bubbling and Once
 > [Demo](https://andy-techen.github.io/js30/25%20-%20Event%20Capture,%20Propagation,%20Bubbling%20and%20Once/index.html)
+- **Event capturing**
+  - The event **goes down** from `document` until it reaches target element
+
+- **Event bubbling**
+  - The event **bubbles up** from the target element until it reaches `document`
+  - `e.stopPropagation()` stops bubbling on **current** event handler (`e.stopImmediatePropagation()` stops all event handlers)
+
+- Event handler options
+  ```JavaScript
+  element.addEventListener(..., {
+    capture: true,
+    // if true, the handler is set on the capturing phase;
+    // if false (default), the handler is set on the bubbling phase
+    once: true;  // removeEventListener after first event occurrence
+  })
+  ```
+
