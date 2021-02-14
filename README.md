@@ -624,3 +624,5 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
     });
     ```
 
+## 28 - Video Speed Controller
+> [Demo](https://andy-techen.github.io/js30/27%20-%20Video%20Speed%20Controller/index.html)
