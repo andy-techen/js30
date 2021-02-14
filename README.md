@@ -625,9 +625,12 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
     ```
 
 ## 28 - Video Speed Controller
-> [Demo](https://andy-techen.github.io/js30/27%20-%20Video%20Speed%20Controller/index.html)
+> [Demo](https://andy-techen.github.io/js30/28%20-%20Video%20Speed%20Controller/index.html)
 - `HTMLMediaElement.playbackRate = n`
   - Sets the playback rate to `n` (defaults to `1`), audio is muted outside the range `0.25` to `4.0`
 
 - `Number.prototype.toFixed(n)`
   - Formats a number using fixed-point notation, shows `n` digits after the decimal place
+
+## 29 - Countdown Timer
+> [Demo](https://andy-techen.github.io/js30/29%20-%Countdown%20Timer/index.html)
