@@ -588,3 +588,39 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 
 ## 27 - Click and Drag
 > [Demo](https://andy-techen.github.io/js30/26%20-%20Click%20and%20Drag/index.html)
+- Explicit `console.log()`
+  - `console.log({x, y})` logs `x`, `y` values as an object `{x: valueX, y: valueY}`
+
+- `MouseEvent.pageX`
+  - The X coordinate where the `MouseEvent` was called relative to the left edge of the entire **document**, taking into account any horizontal scrolling of the page (not including scrolling of the elements)
+
+- `Element.scrollLeft`
+  - Gets or sets the number of pixels that an **element**'s content is scrolled from its left edge
+    
+    ```JavaScript
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        // subtract offset if there's a margin between page and slider
+        startX = e.pageX - slider.offsetLeft;
+        // get how far the slider is scrolled already
+        scrollLeft = slider.scrollLeft;
+    });
+    slider.addEventListener('mouseup', () => { isDown = false; });
+    slider.addEventListener('mouseleave', () => { isDown = false; });
+
+    slider.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        // get current position on page upon mousemove
+        const x = e.pageX - slider.offsetLeft;
+        // (mouse moves left) ? negative walk -> scrolls left : positive walk -> scrolls right
+        // scroll a bit more (3X) on every mousemove to make scrolling smoother
+        const walk = (x - startX) * 3;
+        slider.scrollLeft = scrollLeft - walk;
+    });
+    ```
+
