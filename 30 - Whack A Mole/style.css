@@ -18,9 +18,14 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 10rem;
+  font-size: 8rem;
   line-height: 1;
   margin-bottom: 0;
+}
+
+h3 {
+  font-size: 2.5rem;
+  margin: 10px;
 }
 
 .score {
@@ -68,4 +73,21 @@ h1 {
 
 .hole.up .mole {
   top: 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 14%;
+  margin-left: 20px;
+}
+
+.levels, .leaderboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.levels>button {
+  margin-top: 5px;
 }
