@@ -634,3 +634,32 @@ Notes for 30 Day JavaScript (Vanilla JS) Challenge as proposed by [Wes Bos](http
 
 ## 29 - Countdown Timer
 > [Demo](https://andy-techen.github.io/js30/29%20-%Countdown%20Timer/index.html)
+- `Date` objects
+  - `Date.now()` returns current timestamp
+  - Initiated with `new Date(val)`; `val` can be empty, a `timestamp`, `dateString`, or individual date components
+  - Get date details with `Date.prototype.getDate()`, `Date.prototype.getHours()`, etc.
+
+- Dealing with `intervals`
+  
+  ```JavaScript
+  // initiate interval with an `intervalID` to manipulate the interval afterwards
+  let intervalID;
+
+  intervalID = setInterval(() => {
+    // do something
+  }, 1000) // milliseconds
+
+  clearInterval(intervalID);  // cancels the `intervalID` interval
+  ```
+
+- Padding leading zeros
+  
+  ```JavaScript
+  `${minutes}:${(seconds < 10) ? '0' : ''}${seconds}`;
+  // equivalent to
+  `${minutes}:${seconds.toLocaleString(undefined, {minimumIntegerDigits: 2})}`;
+  // watch out for -0 (zero division) though
+  ```
+
+## 30 - Whack A Mole
+> [Demo](https://andy-techen.github.io/js30/30%20-%Whack%20A%20Mole/index.html)
